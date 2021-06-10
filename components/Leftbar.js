@@ -8,10 +8,26 @@ const Leftbar = () => {
   const router = useRouter();
 
   const links = [
-    { title: "Home", href: "/", icon: <AiFillHome style={{width: '20px', height: '20px'}} /> },
-    { title: "About", href: "/about", icon: <FaUser style={{width: '20px', height: '20px'}} />  },
-    { title: "Portfolio", href: "/portfolio", icon: <MdWork style={{width: '20px', height: '20px'}} />  },
-    { title: "Contact", href: "/contact", icon: <MdMessage style={{width: '20px', height: '20px'}} />  },
+    {
+      title: "Home",
+      href: "/",
+      icon: <AiFillHome style={{ width: "20px", height: "20px" }} />,
+    },
+    {
+      title: "About",
+      href: "/about",
+      icon: <FaUser style={{ width: "20px", height: "20px" }} />,
+    },
+    {
+      title: "Portfolio",
+      href: "/portfolio",
+      icon: <MdWork style={{ width: "20px", height: "20px" }} />,
+    },
+    {
+      title: "Contact",
+      href: "/contact",
+      icon: <MdMessage style={{ width: "20px", height: "20px" }} />,
+    },
   ];
 
   return (
@@ -22,8 +38,11 @@ const Leftbar = () => {
             HASSANIEN
           </p>
           <ul className="mt-10">
-            {links?.map((link) => (
-              <li className="group transform hover:scale-110 motion-reduce:transform-none transition duration-150 ease-in-out mb-2">
+            {links?.map((link, i) => (
+              <li
+                key={i}
+                className="group transform hover:scale-110 motion-reduce:transform-none transition duration-150 ease-in-out mb-2"
+              >
                 <Link href={link?.href}>
                   <a
                     className={
@@ -44,8 +63,8 @@ const Leftbar = () => {
       <div className="flex md:hidden h-12 w-full bg-white items-center justify-between px-2">
         <p className="font-bold text-lg tracking-widest">HASSANIEN</p>
         <ul className="flex flex-row items-center justify-center">
-          {links?.map((link) => (
-            <li className="mr-4">
+          {links?.map((link, i) => (
+            <li key={i} className="mr-4">
               <Link href={link?.href}>
                 <a>{link?.icon}</a>
               </Link>

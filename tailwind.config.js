@@ -1,5 +1,4 @@
 module.exports = {
-  purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -11,10 +10,5 @@ module.exports = {
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
     },
-    extend: {},
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 };

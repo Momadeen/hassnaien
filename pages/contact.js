@@ -21,8 +21,8 @@ function Contact() {
       <p className="font-bold">Contact With me</p>
 
       <ul className="flex flex-row mt-8">
-        {socials?.map((social) => (
-          <li className="mr-4">
+        {socials?.map((social, i) => (
+          <li key={i} className="mr-4">
             <a href={social.href} target="_blank">
               {social?.icon}
             </a>

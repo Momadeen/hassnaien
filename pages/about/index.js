@@ -1,6 +1,6 @@
 import { useState } from "react";
-import SkillsModal from "./SkillsModal";
-import WorkModal from "./WorkModal";
+import SkillsModal from "./skillsmodal";
+import WorkModal from "./workmodal";
 
 function About() {
   const infos = [

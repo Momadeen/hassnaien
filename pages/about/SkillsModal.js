@@ -1,4 +1,4 @@
-import Modal from "./Modal";
+import Modal from "./modal";
 
 const skills = [
   "HTML/CSS",
@@ -14,8 +14,10 @@ const skills = [
 const SkillsModal = ({ closeModal, isOpen }) => (
   <Modal title="Skills" isOpen={isOpen} closeModal={closeModal}>
     <ul className="list-disc m-8">
-      {skills?.map((skill) => (
-        <li className="mb-4 font-bold">{skill}</li>
+      {skills?.map((skill, i) => (
+        <li key={i} className="mb-4 font-bold">
+          {skill}
+        </li>
       ))}
     </ul>
   </Modal>

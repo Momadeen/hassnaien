@@ -1,4 +1,4 @@
-import Modal from "./Modal";
+import Modal from "./modal";
 
 const jobs = [
   {
@@ -36,8 +36,8 @@ const Job = ({ job }) => (
       <div className="mt-8">
         <p className="font-bold text-md">Main responsibilities:</p>
         <ul className="list-disc mt-2 ml-8">
-          {job?.whatIDid?.map((rep) => (
-            <li className="mb-2">{rep}</li>
+          {job?.whatIDid?.map((rep, i) => (
+            <li key={i} className="mb-2">{rep}</li>
           ))}
         </ul>
       </div>
