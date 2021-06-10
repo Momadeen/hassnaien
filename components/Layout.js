@@ -1,4 +1,4 @@
-import Leftbar from "./leftbar";
+import Leftbar from "./Leftbar";
 
 const Layout = ({ children }) => (
   <div className="flex flex-col md:flex-row">
