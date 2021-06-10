@@ -47,8 +47,8 @@ const Job = ({ job }) => (
 
 const WorkModal = ({ closeModal, isOpen }) => (
   <Modal title="Work Experience" isOpen={isOpen} closeModal={closeModal}>
-    {jobs?.map((job) => (
-      <Job job={job} />
+    {jobs?.map((job,i) => (
+      <Job key={i} job={job} />
     ))}
   </Modal>
 );

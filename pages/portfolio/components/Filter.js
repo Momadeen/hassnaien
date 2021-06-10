@@ -16,8 +16,9 @@ const Filter = ({ setProjectFilter }) => {
 
   return (
     <div className="flex w-full justify-end">
-      {types?.map((type) => (
+      {types?.map((type, i) => (
         <p
+          key={i}
           onClick={() => onClick(type)}
           className={
             active === type?.stack ? "font-bold mr-5" : "mr-5 cursor-pointer"

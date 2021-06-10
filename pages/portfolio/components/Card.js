@@ -7,7 +7,7 @@ const Card = ({ project }) => (
     >
       <div className="w-full h-4/5 overflow-hidden">
         <img
-          src={project.img}
+          src={project?.img}
           alt="project"
           className="w-full h-full transform hover:grayscale-0 hover:scale-110  transition duration-500 ease-in-out rounded-md object-cover"
         />
