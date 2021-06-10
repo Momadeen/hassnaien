@@ -1,22 +1,14 @@
+const purgecss = require("@fullhuman/postcss-purgecss")({
+  // paths to all of the template files in the project
+  content: ["./src/**/*.html", "./src/**/*.tsx", "./public/**/*.html"],
+
+  // default extractor including tailwind's special characters
+  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
+});
+
 module.exports = {
   plugins: {
-    'postcss-preset-env': {
-      autoprefixer: {
-        flexbox: 'no-2009',
-      },
-      stage: 3,
-      features: {
-        'custom-properties': false,
-      },
-    },
-    '@fullhuman/postcss-purgecss': {
-      content: [
-          './pages/**/*.{js,jsx,ts,tsx}',
-          './components/**/*.{js,jsx,ts,tsx}'
-      ],
-      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-      safelist: ["html", "body"]
-    },
-    'tailwindcss': {}
+    tailwindcss: {},
+    "postcss-preset-env": {stage:2}
   }
-}
+};

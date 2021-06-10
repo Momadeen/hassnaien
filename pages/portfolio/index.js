@@ -74,8 +74,8 @@ function Portfolio() {
     <div className="flex flex-col">
       <Filter setProjectFilter={setProjectFilter} />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
-        {filterProject?.map((project) => (
-          <Card project={project} />
+        {filterProject?.map((project, i) => (
+          <Card key={i} project={project} />
         ))}
       </div>
     </div>
