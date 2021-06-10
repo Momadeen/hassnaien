@@ -60,8 +60,8 @@ function About() {
           </div>
 
           <div className="mt-8 ml-4">
-            {infos?.map((info) => (
-              <div className="flex flex-row mb-5">
+            {infos?.map((info, i) => (
+              <div key={i} className="flex flex-row mb-5">
                 <p className="color-black font-bold text-sm min-w-min">
                   {info?.title}
                 </p>

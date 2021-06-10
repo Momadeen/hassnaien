@@ -3,7 +3,6 @@
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   transition: all 1s ease-in-out;
   border: 10px solid rgba(135, 135, 135, 0.65)!important;
-  filter: grayscale(90%);
 }
 
 @keyframes morph {

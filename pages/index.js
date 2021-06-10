@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="flex items-center h-full flex-col md:flex-row">
       <Image
-        src="/hasss.jpg"
+        src="/ha.jpg"
         alt="Picture of the author"
         objectFit="contain"
         

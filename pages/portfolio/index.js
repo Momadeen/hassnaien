@@ -20,7 +20,7 @@ function Portfolio() {
     },
     {
       name: "Hassanien",
-      url: "https://topshotconsultants.com/",
+      url: "https://hassnaien.vercel.app/",
       img: "/hassanien.jpg",
       type: "next",
     },
