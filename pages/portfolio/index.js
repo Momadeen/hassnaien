@@ -1,8 +1,8 @@
 // import whatsappimg from "";
 
 import { useMemo, useState } from "react";
-import Card from "./components/card";
-import Filter from "./components/filter";
+import Card from "./components/Card";
+import Filter from "./components/Filter";
 
 function Portfolio() {
   const projects = [
